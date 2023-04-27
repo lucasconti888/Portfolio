@@ -1,0 +1,72 @@
+/* global.css */
+body {
+    background-color: linear-gradient(180deg, rgba(9,18,53,1) 1%, rgba(0,0,0,1) 86%);
+  }
+  
+  .container {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container2 {
+    background-image: url(200w.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+
+
+  /* Define the animation for growing and shrinking */
+@keyframes growAndShrink {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  50% {
+    transform: scale(1.2); /* Scaled up size */
+  }
+  100% {
+    transform: scale(1); /* Shrunk back to original size */
+  }
+}
+
+/* Apply the animation to the component */
+.component {
+  animation-name: growAndShrink;
+  animation-duration: 1s; /* Duration of the animation */
+  animation-iteration-count: 1; /* Number of times the animation loops */
+}
+.speaking-box-tail {
+  position: absolute;
+  left: -11px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #ffffff;
+}
+
+.speaking-box-tail {
+  position: absolute;
+  left: -11px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #19224B;
+}
+
+.speaking-box-tail2 {
+  position: absolute;
+  right: -11px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid #19224B;
+}
+
+
